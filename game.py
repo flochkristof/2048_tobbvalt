@@ -110,7 +110,6 @@ def move_left(col):
     return new_col
 
 
-# mozgat
 def move(board, direction):
     """Mozgatást végzi, megadott irányban"""
     # 0: bal, 1: fel, 2: jobb, 3: le
@@ -122,7 +121,6 @@ def move(board, direction):
     return np.rot90(new_board, -direction)
 
 
-# mozgat, vizsgálja sikerült-e
 def main_loop(board, direction):
     """Meghívja a mozgató függvényt, vizsgálja, 
     hogy a mozgatás sikeres-e, cellát tölt"""
